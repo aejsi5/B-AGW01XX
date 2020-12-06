@@ -1,0 +1,209 @@
+:root {
+    --header: #98C9A3;
+    --navico: #393E41;
+    --bg: #badfc2;
+    --contrast: #C3681D;
+    --warning: #ec4e20;
+    --black: #444545;
+
+
+}
+body > * {
+  transition: filter linear;
+}
+body, html {
+    height:100%;
+}
+*, :after, :before{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: var(--header)
+}
+a:hover{
+    text-decoration: none;
+    color: var(--contrast);
+}
+h1{
+    font-weight: normal;
+    font-size: 2.0rem;
+    padding-bottom: 1rem;
+    color: var(--contrast);
+    letter-spacing: 1px;
+}
+h2{
+    font-weight: normal;
+    color: var(--contrast);
+    letter-spacing: 1px;
+}
+body {
+    margin:0;
+    padding: 0;
+    display: block;
+    font-family: Roboto, Ubuntu, Sans, sans-serif;
+    font-size: 14px;
+    color: var(--black);
+    background-color: var(--bg);
+    line-height: 1.5;
+    text-align: left;
+    height: 100%;
+}
+.body-wrapper{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.navbar-wra{
+    background-color: var(--header);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.logo-wrapper{
+    display: flex;
+    padding: 15px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+.logo>img{
+    width: 100%;
+    max-height: 75px;
+    max-width: 575px;
+}
+.logo{
+    width: 60%;
+}
+.oh-div{
+    width: 30%;
+}
+.oh-div>img{
+    max-height: 75px;
+    max-width: 360px;
+    width: 100%;
+}
+.oh{
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--navico);
+}
+.oh-text{
+    color: var(--contrast)
+}
+.main-nav-wrapper{
+    padding: 0 5px 1rem 5px;
+}
+.main-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.mnav-li{
+    cursor: pointer;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+    color: var(--navico);
+    font-weight: bold;
+}
+.li-active{
+    color: var(--contrast);
+}
+.mnav-span{
+    font-size: 1.2rem;
+}
+.mnav-li:hover{
+    background-color: var(--bg);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    color: var(--contrast);
+    border-radius: 7px;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+div.sidebar{
+    width: 20%;
+    max-width: 200px;
+}
+ul.sidebar{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:2rem;
+}
+ul.sidebar>li{
+    margin-bottom: 15px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+    color: var(--black);
+    font-weight: bold;
+    background-color: var(--header);
+    border-radius: 7px;
+}
+.sidebar-li:hover{
+    cursor: pointer;
+    color: var(--contrast);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+}
+.content{
+    width: 100%;
+    overflow-y: scroll;
+}
+.content-wrapper{
+    padding: 2rem;
+}
+#schutzabgabevertrag_p1{
+    margin-bottom: 10px;
+}
+.imgsav{
+    width: 100%;
+    max-width: 595px;
+}
+@media (max-width: 960px){
+    div.sidebar{
+        width: 0;
+        display: none;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media (max-width: 560px){
+    .logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    }
+    .logo{
+        width: 100%;
+    }
+    .oh-div{
+        margin-top:10px;
+        width: 100%;
+    }
+    .oh{
+        font-size: 1rem;
+    }
+    .main-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    }
+    .mnav-li{
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+    color: var(--navico);
+    font-weight: bold;
+    background-color: var(--bg);
+    border-radius: 7px;
+    margin-bottom: 3px;
+}
+}
+
