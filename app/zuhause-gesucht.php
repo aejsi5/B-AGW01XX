@@ -14,13 +14,13 @@
     <?php
         include 'db_con.php';
 
-        //if(isset($_GET['type'])){
-          //  if($_GET['type']=='dogs'){
-            //    $query = "SELECT * FROM 'hunde' ORDER BY 'sort';"
-              //  $res = mysql_query($query);
-                //echo $res;
-            //};
-        //};
+        if(isset($_GET['type'])){
+            if($_GET['type']=='dogs'){
+                $query = "SELECT * FROM 'hunde' ORDER BY 'sort';";
+                $res = mysql_query($query);
+                echo $res;
+            };
+        };
     ?>
 
     <?php
