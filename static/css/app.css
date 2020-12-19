@@ -218,11 +218,14 @@ ul.sidebar>a>li{
     box-shadow: 3px 1px 10px Rgba(0,0,0,0.6);
     padding: 8px;
 }
-.col-f{
+.dog_tbl{
+    width: 100%;
+}
+.col_f{
     font-weight: bold;
     width: 115px;
 }
-tr{
+.border{
     border-bottom: 1.2px solid var(--navico);
 }
 tr:hover{
