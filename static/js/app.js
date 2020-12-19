@@ -10,21 +10,6 @@ jQuery(document).ready(function ($) {
     $('.link-zs').click(function () {
         window.location = "zuhause-gesucht.php"
     });
-    $('.link-zs-h').click(function () {
-        window.location = "zuhause-gesucht.php?type=dogs"
-    });
-    $('.link-zs-k').click(function () {
-        window.location = "zuhause-gesucht.php?type=cats"
-    });
-    $('.link-zs-a').click(function () {
-        window.location = "zuhause-gesucht.php?type=other"
-    });
-    $('.link-zs-w').click(function () {
-        window.location = "zuhause-gesucht.php?type=white"
-    });
-    $('.link-zs-v').click(function () {
-        window.location = "zuhause-gesucht.php?type=missed"
-    });
     $('.link-zf').click(function () {
         window.location = "zuhause-gefunden.php"
     });
