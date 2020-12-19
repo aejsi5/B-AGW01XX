@@ -12,7 +12,7 @@
 <body>
 
     <?php
-        include 'db_con.php'
+        include 'db_con.php';
 
         //if(isset($_GET['type'])){
           //  if($_GET['type']=='dogs'){
