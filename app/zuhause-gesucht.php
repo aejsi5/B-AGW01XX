@@ -10,6 +10,19 @@
     <title>Zuhause Gesucht</title>
 </head>
 <body>
+
+    <?php
+        include 'db_con.php'
+
+        if(isset($_GET['type'])){
+            if($_GET['type']=='dogs'){
+                $query = "SELECT * FROM 'hunde' ORDER BY 'sort';"
+                $res = mysql_query($query);
+                echo $res;
+            }
+        }
+    ?>
+
     <div class="navbar-wra">
         <div class="logo-wrapper">
             <div class="logo">
@@ -24,7 +37,7 @@
                 <li class="mnav-li" id="link-h">
                     <span class="mnav-span">Home</span>
                 </li>
-                <li class="mnav-li not-collapse link-zs">
+                <li class="mnav-li link-zs">
                     <span class="mnav-span li-active">Zuhause gesucht</span>
                     <ul class="subnav collapse">
                         <li class="subnav-li link-zs-h">Hunde</li>
@@ -34,7 +47,7 @@
                         <li class="subnav-li link-zs-v">Vermisste Tiere</li>
                     </ul>
                 </li>
-                <li class="mnav-li not-collapse link-zf">
+                <li class="mnav-li link-zf">
                     <span class="mnav-span">Zuhause gefunden</span>
                     <ul class="subnav collapse">
                         <li class="subnav-li link-demo">Hunde</li>
@@ -44,14 +57,14 @@
                         <li class="subnav-li link-demo">Vermisste Tiere</li>
                     </ul>
                 </li>
-                <li class="mnav-li not-collapse link-g">
+                <li class="mnav-li link-g">
                     <span class="mnav-span">Galerie/Archiv</span>
                     <ul class="subnav collapse">
                         <li class="subnav-li link-demo">Lorem Ipsum</li>
                         <li class="subnav-li link-demo">Dolorem Est</li>
                     </ul>
                 </li>
-                <li class="mnav-li not-collapse link-k">
+                <li class="mnav-li link-k">
                     <span class="mnav-span">Kontakt/Impressum</span>
                     <ul class="subnav collapse">
                         <li class="subnav-li link-demo">Lorem Ipsum</li>
