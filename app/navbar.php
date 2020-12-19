@@ -1,5 +1,5 @@
 <?php
-    echo("""
+    echo("
     <div class='navbar-wra'>
         <div class='logo-wrapper'>
             <div class='logo'>
@@ -50,5 +50,5 @@
                 </li>
             </ul>
         </div>
-    </div>""");
+    </div>");
 ?>
