@@ -41,40 +41,40 @@
                                         <tbody>
                                             <tr class='border'>
                                                 <td class='col_f'>Name:</td>
-                                                <td class='tbl_val'><span>" + $result['Name'] +"</span><span data-emergency='"+ $result['Notfall'] +"'></span></td>
-                                                <td class='pics' rowspan=9 ><div>" + $result['Bild'] +"</div><span>" + $result['video'] + "</span></td>
+                                                <td class='tbl_val'><span>" . $result['Name'] ."</span><span data-emergency='". $result['Notfall'] ."'></span></td>
+                                                <td class='pics' rowspan=9 ><div>" . $result['Bild'] ."</div><span>" . $result['video'] . "</span></td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Rasse:</td>
-                                                <td class='tbl_val'>" + $result['Rasse'] + "</td>
+                                                <td class='tbl_val'>" . $result['Rasse'] . "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Geschlecht:</td>
-                                                <td class='tbl_val'>" + $result['Geschlecht'] + "</td>
+                                                <td class='tbl_val'>" . $result['Geschlecht'] . "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Im TH seit:</td>
-                                                <td class='tbl_val'>" + $result['im_TH_seit'] + "</td>
+                                                <td class='tbl_val'>" . $result['im_TH_seit'] . "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Alter:</td>
-                                                <td class='tbl_val'>" + $result['Alter'] + "</td>
+                                                <td class='tbl_val'>" . $result['Alter'] . "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Abgabegrund:</td>
-                                                <td class='tbl_val'>" + $result['Abgabegrund'] + "</td>
+                                                <td class='tbl_val'>" . $result['Abgabegrund'] . "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>So bin ich:</td>
-                                                <td class='tbl_val'>" + $result['So_bin_ich'] + "</td>
+                                                <td class='tbl_val'>" . $result['So_bin_ich'] . "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Besonderheiten:</td>
-                                                <td class='tbl_val'>" + $result['Besonderheiten'] + "</td>
+                                                <td class='tbl_val'>" . $result['Besonderheiten'] . "</td>
                                             </tr>
                                             <tr>
                                                 <td class='col_f'>Beschreibung:</td>
-                                                <td class='tbl_val'>" + $result['Beschreibung'] + "</td>
+                                                <td class='tbl_val'>" . $result['Beschreibung'] . "</td>
                                             </tr>
                                         </tbody>
                                     </table>
