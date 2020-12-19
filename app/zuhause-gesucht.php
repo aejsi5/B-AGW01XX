@@ -15,8 +15,8 @@
         include 'db_con.php';
 
         if(isset($_GET['type'])){
-            if($_GET['type']=='dogs'){
-                $query = "SELECT * FROM 'Hunde' ORDER BY 'sort';";
+            if(trim($_GET['type']) == 'dogs'){
+                $query = "SELECT * FROM Hunde ORDER BY sort;";
                 $res = mysqli_query($con, $query);
                 echo $res;
             };
