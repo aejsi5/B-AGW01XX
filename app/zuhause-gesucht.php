@@ -42,7 +42,7 @@
                                             <tr class='border'>
                                                 <td class='col_f'>Name:</td>
                                                 <td class='tbl_val'><span>" + $result['Name'] +"</span><span data-emergency='"+ $result['Notfall'] +"'></span></td>
-                                                <td class='pics' rowspan=9 >" + $result['Bild'] $result['video'] + "</td>
+                                                <td class='pics' rowspan=9 ><div>" + $result['Bild'] +"</div><span>" + $result['video'] + "</span></td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Rasse:</td>
@@ -50,7 +50,7 @@
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Geschlecht:</td>
-                                                <td class='tbl_val'>$result['Geschlecht']</td>
+                                                <td class='tbl_val'>" + $result['Geschlecht'] + "</td>
                                             </tr>
                                             <tr class='border'>
                                                 <td class='col_f'>Im TH seit:</td>
