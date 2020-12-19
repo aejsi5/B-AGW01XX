@@ -16,10 +16,11 @@
 
         if(isset($_GET['type'])){
             if(trim($_GET['type']) == 'dogs'){
+                echo "Hallo";
                 $query = "SELECT * FROM Hunde ORDER BY sort;";
                 $res = mysqli_query($con, $query);
                 while($result = mysqli_fetch_array($res)){
-                    echo $result['Name'];
+                    echo $result ['Name'];
                 };
             };
         };
