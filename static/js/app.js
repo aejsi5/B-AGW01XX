@@ -68,6 +68,20 @@ jQuery(document).ready(function ($) {
             };
         }
     );
+    $('.hover-space').hover(
+        function () {
+            $(this).addClass('mnav-li-hover');
+            if (window.innerWidth < 960) {
+                $(this).find('ul').removeClass('collapse');
+            };
+        },
+        function () {
+            $(this).removeClass('mnav-li-hover');
+            if (window.innerWidth < 960) {
+                $(this).find('ul').addClass('collapse');
+            };
+        }
+    );
 });
 
 function adapt_height(){
