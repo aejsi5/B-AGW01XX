@@ -6,53 +6,53 @@ jQuery(document).ready(function ($) {
         adapt_height();
     },1000);
     $('#link-h').click(function(){
-        window.location ="home.html"
+        window.location ="home.php"
     });
     $('.link-zs').click(function () {
         if (window.innerWidth < 960) {
             $(this).find('ul').toggleClass('collapse');
         }else{
-            window.location = "zuhause-gesucht.html"
+            window.location = "zuhause-gesucht.php"
         }
     });
     $('.link-zs-h').click(function () {
-        window.location = "zuhause-gesucht.html?type=dogs"
+        window.location = "zuhause-gesucht.php?type=dogs"
     });
     $('.link-zs-k').click(function () {
-        window.location = "zuhause-gesucht.html?type=cats"
+        window.location = "zuhause-gesucht.php?type=cats"
     });
     $('.link-zs-a').click(function () {
-        window.location = "zuhause-gesucht.html?type=other"
+        window.location = "zuhause-gesucht.php?type=other"
     });
     $('.link-zs-w').click(function () {
-        window.location = "zuhause-gesucht.html?type=white"
+        window.location = "zuhause-gesucht.php?type=white"
     });
     $('.link-zs-v').click(function () {
-        window.location = "zuhause-gesucht.html?type=missed"
+        window.location = "zuhause-gesucht.php?type=missed"
     });
     $('.link-zf').click(function () {
         if (window.innerWidth < 960) {
             $(this).find('ul').toggleClass('collapse');
         } else {
-            window.location = "zuhause-gefunden.html"
+            window.location = "zuhause-gefunden.php"
         }
     });
     $('.link-g').click(function () {
         if (window.innerWidth < 960) {
             $(this).find('ul').toggleClass('collapse');
         } else {
-            window.location = "galerie.html"
+            window.location = "galerie.php"
         }
     });
     $('.link-k').click(function () {
         if (window.innerWidth < 960) {
             $(this).find('ul').toggleClass('collapse');
         } else {
-            window.location = "kontakt.html"
+            window.location = "kontakt.php"
         }
     });
     $('.link-demo').click(function(){
-        window.location = "demo.html"
+        window.location = "demo.php"
     });
 });
 

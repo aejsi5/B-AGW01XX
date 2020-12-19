@@ -42,7 +42,7 @@
                     </ul>
                 </li>
                 <li class='mnav-li link-k'>
-                    <span class='mnav-span li-active'>Kontakt/Impressum</span>
+                    <span class='mnav-span'>Kontakt/Impressum</span>
                     <ul class='subnav collapse'>
                         <li class='subnav-li link-demo'>Lorem Ipsum</li>
                         <li class='subnav-li link-demo'>Dolorem Est</li>
