@@ -107,6 +107,8 @@ body {
     letter-spacing: 1px;
     color: var(--navico);
     font-weight: bold;
+    display: block;
+    position: relative;
 }
 .li-active{
     color: var(--contrast);
@@ -168,9 +170,14 @@ ul.sidebar>li{
     max-width: 595px;
 }
 .subnav{
-    display: flex;
+    display: block;
     position: absolute;
     flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: var(--bg);
+    margin-top: 12px;
 }
 .subnav-li{
     margin-top: 10px;
@@ -226,6 +233,8 @@ ul.sidebar>li{
     background-color: var(--bg);
     border-radius: 7px;
     margin-bottom: 3px;
+    display: block;
+    position: relative;
 }
 }
 

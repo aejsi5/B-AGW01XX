@@ -63,6 +63,7 @@
     <script src="../static/js/jquery-3.5.1.js"></script>
     <script src="../static/DataTables/datatables.js"></script>
     <script src="../static/js/bootstrap.js"></script>
+    <script src="https://kit.fontawesome.com/9b040eb53d.js" crossorigin="anonymous"></script>
     <script src="../static/js/app.js"></script>
 </body>
 </html>

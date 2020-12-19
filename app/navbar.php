@@ -17,6 +17,7 @@
                 <li class='mnav-li link-zs'>
                     <span class='mnav-span'>Zuhause gesucht</span>
                     <ul class='subnav collapse'>
+                        <i class='fas fa-caret-up'></i>
                         <li class='subnav-li link-zs-h'>Hunde</li>
                         <li class='subnav-li link-zs-k'>Katzen</li>
                         <li class='subnav-li link-zs-a'>Andere Tiere</li>
@@ -27,6 +28,7 @@
                 <li class='mnav-li link-zf'>
                     <span class='mnav-span'>Zuhause gefunden</span>
                     <ul class='subnav collapse'>
+                        <i class='fas fa-caret-up'></i>
                         <li class='subnav-li link-demo'>Hunde</li>
                         <li class='subnav-li link-demo'>Katzen</li>
                         <li class='subnav-li link-demo'>Andere Tiere</li>
@@ -37,6 +39,7 @@
                 <li class='mnav-li link-g'>
                     <span class='mnav-span'>Galerie/Archiv</span>
                     <ul class='subnav collapse'>
+                        <i class='fas fa-caret-up'></i>
                         <li class='subnav-li link-demo'>Lorem Ipsum</li>
                         <li class='subnav-li link-demo'>Dolorem Est</li>
                     </ul>
@@ -44,6 +47,7 @@
                 <li class='mnav-li link-k'>
                     <span class='mnav-span'>Kontakt/Impressum</span>
                     <ul class='subnav collapse'>
+                        <i class='fas fa-caret-up'></i>
                         <li class='subnav-li link-demo'>Lorem Ipsum</li>
                         <li class='subnav-li link-demo'>Dolorem Est</li>
                     </ul>
