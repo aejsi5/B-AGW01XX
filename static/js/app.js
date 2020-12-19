@@ -54,6 +54,14 @@ jQuery(document).ready(function ($) {
     $('.link-demo').click(function(){
         window.location = "demo.php"
     });
+    $('.mnav-li').hover(
+        function(){
+            $(this).addClass('mnav-li-hover');
+        },
+        function(){
+            $(this).removeClass('mnav-li-hover');
+        }
+    );
 });
 
 function adapt_height(){

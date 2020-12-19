@@ -116,7 +116,7 @@ body {
 .mnav-span{
     font-size: 1.2rem;
 }
-.mnav-li:hover{
+.mnav-li-hover{
     background-color: var(--bg);
     box-shadow: 0 2px 3px rgba(0,0,0,0.1);
     color: var(--contrast);
@@ -178,6 +178,9 @@ ul.sidebar>li{
     border-radius: 15px;
     background-color: var(--bg);
     margin-top: 12px;
+    box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 4px 4px 10px 1px rgba(0, 0, 0, 0.7);
 }
 .subnav-li{
     margin-top: 10px;
@@ -192,6 +195,13 @@ ul.sidebar>li{
     box-shadow: 0 2px 3px rgba(0,0,0,0.3);
     background-color: var(--bg);
     color: var(--contrast);
+}
+.fa-caret-up{
+    position: absolute;
+    top: -17px;
+    left: 20px;
+    font-size: 30px;
+    color: var(--bg);
 }
 @media (max-width: 960px){
     div.sidebar{
