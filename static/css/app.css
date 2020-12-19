@@ -243,6 +243,9 @@ ul.sidebar>li{
     width: 100%;
     align-items: center;
     }
+    .subnav{
+        width: 50%;
+    }
     .mnav-li{
     width: 90%;
     padding: 5px 10px 5px 10px;
