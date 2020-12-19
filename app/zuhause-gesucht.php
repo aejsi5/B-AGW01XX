@@ -18,7 +18,8 @@
             if(trim($_GET['type']) == 'dogs'){
                 $query = "SELECT * FROM Hunde ORDER BY sort;";
                 $res = mysqli_query($con, $query);
-                echo $res['Name'];
+                $result = $res->fetch_assoc();
+                echo $result['Name'];
             };
         };
     ?>
