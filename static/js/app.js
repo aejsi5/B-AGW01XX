@@ -1,7 +1,6 @@
 "use strict";
 
 jQuery(document).ready(function ($) {
-    adapt_height();
     window.setInterval(function(){
         adapt_height();
     },1000);

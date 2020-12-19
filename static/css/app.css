@@ -170,6 +170,7 @@ ul.sidebar>li{
     max-width: 595px;
 }
 .subnav{
+    z-index: 9999;
     display: block;
     position: absolute;
     flex-direction: column;

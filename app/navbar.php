@@ -19,11 +19,11 @@
                     <ul class='subnav collapse'>
                         <div class='hover-space'></div>
                         <i class='fas fa-caret-up'></i>
-                        <li class='subnav-li link-zs-h'>Hunde</li>
-                        <li class='subnav-li link-zs-k'>Katzen</li>
-                        <li class='subnav-li link-zs-a'>Andere Tiere</li>
-                        <li class='subnav-li link-zs-w'>Weiße Schnauzen</li>
-                        <li class='subnav-li link-zs-v'>Vermisste Tiere</li>
+                        <a href='zuhause-gesucht.php?type=dogs'><li class='subnav-li link-zs-h'>Hunde</li></a>
+                        <a href='zuhause-gesucht.php?type=cats'><li class='subnav-li link-zs-k'>Katzen</li></a>
+                        <a href='zuhause-gesucht.php?type=other'><li class='subnav-li link-zs-a'>Andere Tiere</li></a>
+                        <a href='zuhause-gesucht.php?type=white'><li class='subnav-li link-zs-w'>Weiße Schnauzen</li></a>
+                        <a href='zuhause-gesucht.php?type=missed'><li class='subnav-li link-zs-v'>Vermisste Tiere</li></a>
                     </ul>
                 </li>
                 <li class='mnav-li link-zf'>
@@ -31,11 +31,11 @@
                     <ul class='subnav collapse'>
                         <div class='hover-space'></div>
                         <i class='fas fa-caret-up'></i>
-                        <li class='subnav-li link-demo'>Hunde</li>
-                        <li class='subnav-li link-demo'>Katzen</li>
-                        <li class='subnav-li link-demo'>Andere Tiere</li>
-                        <li class='subnav-li link-demo'>Weiße Schnauzen</li>
-                        <li class='subnav-li link-demo'>Vermisste Tiere</li>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Hunde</li></a>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Katzen</li></a>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Andere Tiere</li></a>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Weiße Schnauzen</li></a>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Vermisste Tiere</li></a>
                     </ul>
                 </li>
                 <li class='mnav-li link-g'>
@@ -43,8 +43,8 @@
                     <ul class='subnav collapse'>
                         <div class='hover-space'></div>
                         <i class='fas fa-caret-up'></i>
-                        <li class='subnav-li link-demo'>Lorem Ipsum</li>
-                        <li class='subnav-li link-demo'>Dolorem Est</li>
+                        <a href='demo.php'><a href=''><li class='subnav-li link-demo'>Lorem Ipsum</li></a>
+                        <a href='demo.php'><a href=''><li class='subnav-li link-demo'>Dolorem Est</li></a>
                     </ul>
                 </li>
                 <li class='mnav-li link-k'>
@@ -52,8 +52,8 @@
                     <ul class='subnav collapse'>
                         <div class='hover-space'></div>
                         <i class='fas fa-caret-up'></i>
-                        <li class='subnav-li link-demo'>Lorem Ipsum</li>
-                        <li class='subnav-li link-demo'>Dolorem Est</li>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Lorem Ipsum</li></a>
+                        <a href='demo.php'><li class='subnav-li link-demo'>Dolorem Est</li></a>
                     </ul>
                 </li>
             </ul>
