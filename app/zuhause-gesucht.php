@@ -37,7 +37,8 @@
                         while($result = mysqli_fetch_array($res)){
                             echo($result['Name']);
                         };
-                    };else{
+                    }
+                    else {
                         echo("
                         <div id='schutzabgabevertrag'>
                             <h1>Schutz- und Abgabevertrag</h1>
