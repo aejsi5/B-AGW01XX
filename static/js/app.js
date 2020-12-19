@@ -9,11 +9,7 @@ jQuery(document).ready(function ($) {
         window.location ="home.php"
     });
     $('.link-zs').click(function () {
-        if (window.innerWidth < 960) {
-            $(this).find('ul').toggleClass('collapse');
-        }else{
-            window.location = "zuhause-gesucht.php"
-        }
+        window.location = "zuhause-gesucht.php"
     });
     $('.link-zs-h').click(function () {
         window.location = "zuhause-gesucht.php?type=dogs"
@@ -31,25 +27,13 @@ jQuery(document).ready(function ($) {
         window.location = "zuhause-gesucht.php?type=missed"
     });
     $('.link-zf').click(function () {
-        if (window.innerWidth < 960) {
-            $(this).find('ul').toggleClass('collapse');
-        } else {
-            window.location = "zuhause-gefunden.php"
-        }
+        window.location = "zuhause-gefunden.php"
     });
     $('.link-g').click(function () {
-        if (window.innerWidth < 960) {
-            $(this).find('ul').toggleClass('collapse');
-        } else {
-            window.location = "galerie.php"
-        }
+        window.location = "galerie.php"
     });
     $('.link-k').click(function () {
-        if (window.innerWidth < 960) {
-            $(this).find('ul').toggleClass('collapse');
-        } else {
-            window.location = "kontakt.php"
-        }
+        window.location = "kontakt.php"
     });
     $('.link-demo').click(function(){
         window.location = "demo.php"
