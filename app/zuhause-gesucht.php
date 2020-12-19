@@ -13,12 +13,15 @@
 
     <?php
         include 'db_con.php';
-        echo("Hallo");
-        $query = "SELECT * FROM Hunde ORDER BY sort;";
-        $res = mysqli_query($con, $query);
-        while($result = mysqli_fetch_array($res)){
-            echo($result['Name']);
-        };
+
+            if(isset($_GET["type"]) && trim($_GET["type"]) == 'dogs'){
+                $query = "SELECT * FROM Hunde ORDER BY sort;";
+                $res = mysqli_query($con, $query);
+                while($result = mysqli_fetch_array($res)){
+                    echo($result['Name']);
+                };
+            };
+            
     ?>
 
     <?php
