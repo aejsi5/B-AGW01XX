@@ -29,11 +29,11 @@
     <main>
         <div class="sidebar">
             <ul class="sidebar">
-                <li class="sidebar-li link-zs-h">Hunde</li>
-                <li class="sidebar-li link-zs-k">Katzen</li>
-                <li class="sidebar-li link-zs-a">Andere Tiere</li>
-                <li class="sidebar-li link-zs-w">Weiße Schnauze</li>
-                <li class="sidebar-li link-zs-v">Vermisste Tiere</li>
+                <a href='zuhause-gesucht.php?type=dogs'><li class="sidebar-li link-zs-h">Hunde</li></a>
+                <a href='zuhause-gesucht.php?type=cats'><li class="sidebar-li link-zs-k">Katzen</li></a>
+                <a href='zuhause-gesucht.php?type=other'><li class="sidebar-li link-zs-a">Andere Tiere</li></a>
+                <a href='zuhause-gesucht.php?type=white'><li class="sidebar-li link-zs-w">Weiße Schnauze</li></a>
+                <a href='zuhause-gesucht.php?type=missed'><li class="sidebar-li link-zs-v">Vermisste Tiere</li></a>
             </ul>
         </div>
         <div class="content">
