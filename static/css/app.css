@@ -138,6 +138,15 @@ ul.sidebar{
     margin-right: auto;
     margin-top:2rem;
 }
+ul.sidebar>li{
+    margin-bottom: 15px;
+    padding: 5px 10px 5px 10px;
+    letter-spacing: 1px;
+    color: var(--black);
+    font-weight: bold;
+    background-color: var(--header);
+    border-radius: 7px;
+}
 ul.sidebar>a>li{
     margin-bottom: 15px;
     padding: 5px 10px 5px 10px;
@@ -158,6 +167,7 @@ ul.sidebar>a>li{
 .content{
     width: 100%;
     overflow-y: scroll;
+    padding: 12px;
 }
 .content-wrapper{
     padding: 2rem;
