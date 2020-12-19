@@ -12,16 +12,7 @@
 <body>
 
     <?php
-        include 'db_con.php';
-
-            if(isset($_GET["type"]) && trim($_GET["type"]) == 'dogs'){
-                $query = "SELECT * FROM Hunde ORDER BY sort;";
-                $res = mysqli_query($con, $query);
-                while($result = mysqli_fetch_array($res)){
-                    echo($result['Name']);
-                };
-            };
-            
+        include 'db_con.php';            
     ?>
 
     <?php
@@ -39,23 +30,36 @@
         </div>
         <div class="content">
             <div class="content-wrapper">
-                <div id="schutzabgabevertrag">
-                    <h1>Schutz- und Abgabevertrag</h1>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-                    amet.</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam</p>
-                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-                    gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-                    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-                    <img src="../static/img/SAVE0002.jfif" alt="" id="schutzabgabevertrag_p1" class="imgsav">
-                    <img src="../static/img/SAVE0003.jpg" alt="" id="schutzabgabevertrag_p2" class="imgsav">
-                </div>
+                <?php
+                    if(isset($_GET["type"]) && trim($_GET["type"]) == 'dogs'){
+                        $query = "SELECT * FROM Hunde ORDER BY sort;";
+                        $res = mysqli_query($con, $query);
+                        while($result = mysqli_fetch_array($res)){
+                            echo($result['Name']);
+                        };
+                    };else{
+                        echo("
+                        <div id='schutzabgabevertrag'>
+                            <h1>Schutz- und Abgabevertrag</h1>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+                            amet.</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam</p>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                            magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+                            gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+                            elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+                            <img src='../static/img/SAVE0002.jfif' alt='' id='schutzabgabevertrag_p1' class='imgsav'>
+                            <img src='../static/img/SAVE0003.jpg' alt='' id='schutzabgabevertrag_p2' class='imgsav'>
+                        </div>
+                        ");
+                    };
+                ?>
+                
             </div>
         </div>
     </main>
