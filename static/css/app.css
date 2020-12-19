@@ -150,6 +150,9 @@ ul.sidebar>li{
     color: var(--contrast);
     box-shadow: 0 2px 3px rgba(0,0,0,0.3);
 }
+.sidebar-li:hover>ul>li{
+    color: var(--black)
+}
 .content{
     width: 100%;
     overflow-y: scroll;
@@ -163,6 +166,25 @@ ul.sidebar>li{
 .imgsav{
     width: 100%;
     max-width: 595px;
+}
+.subnav{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+}
+.subnav-li{
+    margin-top: 10px;
+    background-color: var(--header);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 1px solid var(--black);
+}
+.subnav-li:hover{
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    background-color: var(--bg);
+    color: var(--contrast);
 }
 @media (max-width: 960px){
     div.sidebar{

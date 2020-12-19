@@ -8,8 +8,12 @@ jQuery(document).ready(function ($) {
     $('#link-h').click(function(){
         window.location ="home.html"
     });
-    $('.not-collapse.link-zs').click(function () {
-        window.location = "zuhause-gesucht.html"
+    $('.link-zs').click(function () {
+        if (window.innerWidth < 960) {
+            $(this).find('ul').toggleClass('collapse');
+        }else{
+            window.location = "zuhause-gesucht.html"
+        }
     });
     $('.link-zs-h').click(function () {
         window.location = "zuhause-gesucht.html?type=dogs"
@@ -26,29 +30,29 @@ jQuery(document).ready(function ($) {
     $('.link-zs-v').click(function () {
         window.location = "zuhause-gesucht.html?type=missed"
     });
-    $('.not-collapse.link-zf').click(function () {
-        window.location = "zuhause-gefunden.html"
+    $('.link-zf').click(function () {
+        if (window.innerWidth < 960) {
+            $(this).find('ul').toggleClass('collapse');
+        } else {
+            window.location = "zuhause-gefunden.html"
+        }
     });
-    $('.not-collapse.link-g').click(function () {
-        window.location = "galerie.html"
+    $('.link-g').click(function () {
+        if (window.innerWidth < 960) {
+            $(this).find('ul').toggleClass('collapse');
+        } else {
+            window.location = "galerie.html"
+        }
     });
-    $('.not-collapse.link-k').click(function () {
-        window.location = "kontakt.html"
+    $('.link-k').click(function () {
+        if (window.innerWidth < 960) {
+            $(this).find('ul').toggleClass('collapse');
+        } else {
+            window.location = "kontakt.html"
+        }
     });
     $('.link-demo').click(function(){
         window.location = "demo.html"
-    });
-    if ($(window).width() < 960) {
-        $('.mnav-li').removeClass('not-collapse');
-    } else {
-        $('.mnav-li').addClass('not-collapse');
-    };
-    $(window).resize(function(){
-        if ($(window).width() < 960) {
-            $('.mnav-li').removeClass('not-collapse');
-        }else{
-            $('.mnav-li').addClass('not-collapse');
-        };
     });
 });
 
