@@ -57,9 +57,15 @@ jQuery(document).ready(function ($) {
     $('.mnav-li').hover(
         function(){
             $(this).addClass('mnav-li-hover');
+            if (window.innerWidth < 960) {
+                $(this).find('ul').removeClass('collapse');
+            };
         },
         function(){
             $(this).removeClass('mnav-li-hover');
+            if (window.innerWidth < 960) {
+                $(this).find('ul').addClass('collapse');
+            };
         }
     );
 });
