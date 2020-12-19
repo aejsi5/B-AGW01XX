@@ -35,10 +35,8 @@
                         <tbody>
                             <tr>
                                 <td class="col_f">Name:</td>
-                                <td class="tbl_val">$result['Name']</td>
-                                <td class="emergency">$result['Notfall']</td>
-                                <td class="pic_one">$result['Bild'] $result['video']</td>
-                                <td class="pic_two">$result['Bild2']</td>
+                                <td class="tbl_val">$result['Name'] $result['Notfall']</td>
+                                <td class="pics" rowspan=9 >$result['Bild'] $result['video']</td>
                             </tr>
                             <tr>
                                 <td class="col_f">Rasse:</td>
