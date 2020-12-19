@@ -17,7 +17,7 @@
         if(isset($_GET['type'])){
             if($_GET['type']=='dogs'){
                 $query = "SELECT * FROM 'hunde' ORDER BY 'sort';";
-                $res = mysql_query($query);
+                $res = mysqli_query($con, $query);
                 echo $res;
             };
         };
