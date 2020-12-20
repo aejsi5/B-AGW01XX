@@ -236,7 +236,7 @@ ul.sidebar>a>li{
     font-weight: bold;
     width: 115px;
 }
-.border{
+.border_tbl{
     border-bottom: 1.2px solid var(--navico);
 }
 td{

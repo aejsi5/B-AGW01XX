@@ -40,37 +40,37 @@
                                     <table class='dog_tbl'>
                                         <tbody>
                                             <tr class=''>
-                                                <td class='col_f border'>Name:</td>
-                                                <td class='tbl_val border'><span>" . $result['Name'] ."</span><span data-emergency='". $result['Notfall'] ."'></span></td>
+                                                <td class='col_f border_tbl'>Name:</td>
+                                                <td class='tbl_val border_tbl'><span>" . $result['Name'] ."</span><span data-emergency='". $result['Notfall'] ."'></span></td>
                                                 <td class='pics' rowspan=9 ><div>" . $result['Bild'] ."</div><span>" . $result['video'] . "</span></td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>Rasse:</td>
-                                                <td class='tbl_val border'>" . $result['Rasse'] . "</td>
+                                                <td class='col_f border_tbl'>Rasse:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['Rasse'] . "</td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>Geschlecht:</td>
-                                                <td class='tbl_val border'>" . $result['Geschlecht'] . "</td>
+                                                <td class='col_f border_tbl'>Geschlecht:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['Geschlecht'] . "</td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>Im TH seit:</td>
-                                                <td class='tbl_val border'>" . $result['im_TH_seit'] . "</td>
+                                                <td class='col_f border_tbl'>Im TH seit:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['im_TH_seit'] . "</td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>Alter:</td>
-                                                <td class='tbl_val border'>" . $result['Alter'] . "</td>
+                                                <td class='col_f border_tbl'>Alter:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['Alter'] . "</td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>Abgabegrund:</td>
-                                                <td class='tbl_val border'>" . $result['Abgabegrund'] . "</td>
+                                                <td class='col_f border_tbl'>Abgabegrund:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['Abgabegrund'] . "</td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>So bin ich:</td>
-                                                <td class='tbl_val border'>" . $result['So_bin_ich'] . "</td>
+                                                <td class='col_f border_tbl'>So bin ich:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['So_bin_ich'] . "</td>
                                             </tr>
                                             <tr class=''>
-                                                <td class='col_f border'>Besonderheiten:</td>
-                                                <td class='tbl_val border'>" . $result['Besonderheiten'] . "</td>
+                                                <td class='col_f border_tbl'>Besonderheiten:</td>
+                                                <td class='tbl_val border_tbl'>" . $result['Besonderheiten'] . "</td>
                                             </tr>
                                             <tr>
                                                 <td class='col_f'>Beschreibung:</td>
