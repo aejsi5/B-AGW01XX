@@ -29,13 +29,13 @@
             </ul>
         </div>
         <div class="content">
+            <div class='content-wrapper'>
                 <?php
                     if(isset($_GET["type"]) && trim($_GET["type"]) == 'dogs'){
                         $query = "SELECT * FROM Hunde ORDER BY sort;";
                         $res = mysqli_query($con, $query);
                         while($result = mysqli_fetch_array($res)){
                             echo("
-                            <div class='content-wrapper'>
                                 <div class='dog-table-div'>
                                     <table class='dog_tbl'>
                                         <tbody>
