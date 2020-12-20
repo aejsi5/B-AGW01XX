@@ -34,6 +34,7 @@
                     if(isset($_GET["type"]) && trim($_GET["type"]) == 'dogs'){
                         $query = "SELECT * FROM Hunde ORDER BY sort;";
                         $res = mysqli_query($con, $query);
+                        echo("<p>Hier sehen Sie unsere Hunde.</p>");
                         while($result = mysqli_fetch_array($res)){
                             echo("
                                 <div class='dog-table-div'>
@@ -42,7 +43,6 @@
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Name:</td>
                                                 <td class='tbl_val border_tbl'><span>" . $result['Name'] ."</span><span data-emergency='". $result['Notfall'] ."'></span></td>
-                                                <td class='pics' rowspan=9 ><div><img src='../static/img/". $result['Bild'] . "' alt=''><img src='../static/img/". $result['Bild2'] . "' alt=''></div><span>" . $result['video'] . "</span></td>
                                             </tr>
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Rasse:</td>
@@ -78,6 +78,11 @@
                                             </tr>
                                         </tbody>
                                     </table>
+                                    <div class='dog_pics_div'>
+                                        <img src='../static/img/". $result['Bild'] . "' alt=''>
+                                        <img src='../static/img/". $result['Bild2'] . "' alt=''>
+                                        <span>" . $result['video'] . "</span>
+                                    </div>
                                 </div>");
                         };
                     }
