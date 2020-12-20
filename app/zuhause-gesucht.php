@@ -42,7 +42,7 @@
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Name:</td>
                                                 <td class='tbl_val border_tbl'><span>" . $result['Name'] ."</span><span data-emergency='". $result['Notfall'] ."'></span></td>
-                                                <td class='pics' rowspan=9 ><div>" . $result['Bild'] ."</div><span>" . $result['video'] . "</span></td>
+                                                <td class='pics' rowspan=9 ><div><img src='../static/img/". $result['Bild'] . "' alt=''><img src='../static/img/". $result['Bild2'] . "' alt=''></div><span>" . $result['video'] . "</span></td>
                                             </tr>
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Rasse:</td>
