@@ -230,6 +230,7 @@ ul.sidebar>a>li{
 }
 .dog_tbl{
     width: 100%;
+    border-collapse: unset;
 }
 .col_f{
     font-weight: bold;
@@ -237,9 +238,6 @@ ul.sidebar>a>li{
 }
 .border{
     border-bottom: 1.2px solid var(--navico);
-}
-tr:hover{
-    background-color: var(--header);
 }
 td{
     padding: 2px;
