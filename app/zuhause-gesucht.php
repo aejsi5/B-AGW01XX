@@ -79,7 +79,7 @@
                                         </tbody>
                                     </table>
                                     <div class='dog_pics_div'>
-                                        <span class='hint'><i class='fas fa-info-circle'></i>Zum Vergrößern auf die Bilder klicken</span>
+                                        <div class='hint_div'><i class='fas fa-info-circle'></i><span class='hint'>Zum Vergrößern auf die Bilder klicken</span></div>
                                         <img class='dog_pic thumbnail' src='../static/img/". $result['Bild'] . "' alt=''>
                                         <img class='dog_pic secondary' src='../static/img/". $result['Bild2'] . "' alt=''>
                                         <a href='" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
