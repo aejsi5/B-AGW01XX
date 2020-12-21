@@ -276,6 +276,10 @@ td{
     padding: 2px;
     vertical-align: top;
 }
+.emergency{
+    margin-left: 10px;
+    color: var(--warning);
+}
 .dog_pic{
     margin-bottom: 10px;
     margin-right: 5px;

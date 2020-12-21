@@ -43,7 +43,7 @@
                                         <tbody>
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Name:</td>
-                                                <td class='tbl_val border_tbl'><span>" . $result['Name'] ."</span><span data-emergency='". $result['Notfall'] ."'></span></td>
+                                                <td class='tbl_val border_tbl'><span>" . $result['Name'] ."</span><span class='emergency' data-emergency='". $result['Notfall'] ."'></span></td>
                                             </tr>
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Rasse:</td>
