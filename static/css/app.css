@@ -257,6 +257,7 @@ ul.sidebar>a>li{
 }
 .dog_pics_div{
     display: flex;
+    flex-wrap: wrap;
 }
 .col_f{
     font-weight: bold;
@@ -285,6 +286,9 @@ td{
     .content{
         width: 100%;
     }
+    .dog_pic{
+    max-height: 100px;
+    }
 }
 @media (max-width: 560px){
     .logo-wrapper{
@@ -310,6 +314,9 @@ td{
     }
     .subnav{
         width: 50%;
+    }
+    .dog_pic{
+    max-height: 80px;
     }
     .mnav-li{
     width: 90%;
