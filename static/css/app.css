@@ -222,6 +222,25 @@ ul.sidebar>a>li{
     font-size: 30px;
     color: var(--bg);
 }
+.dog_add{
+    width: 45%;
+    padding: 5px;
+}
+.hint_div{
+    font-size: 0.75rem;
+    width: 100%;
+    color: var(--navico);
+}
+.hint{
+    margin-left: 5pxs;
+}
+.video_link{
+    display: flex;
+}
+.video_link >i{
+    font-size: 35px;
+    margin-right: 5px;
+}
 .dog-table-div{
     width: 100%;
     margin-bottom: 12px;
@@ -237,9 +256,7 @@ ul.sidebar>a>li{
     overflow-y: auto;
 }
 .dog_pics_div{
-    width:45%;
     display: flex;
-    padding: 5px;
 }
 .col_f{
     font-weight: bold;
@@ -253,16 +270,12 @@ td{
     vertical-align: top;
 }
 .dog_pic{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    margin-right: 5px;
     display: block;
     max-width: 100%;
     cursor: pointer;
-}
-.thumbnail{
-    max-height: 150px;
-}
-.secondary{
-    max-height: 100px;
+    max-height: 130px;
 }
 @media (max-width: 960px){
     div.sidebar{
