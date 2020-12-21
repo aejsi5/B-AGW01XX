@@ -4,6 +4,8 @@ jQuery(document).ready(function ($) {
     window.setInterval(function(){
         adapt_height();
     },1000);
+    $('span[data-emergency="1"]').html('<i class="fas fa-exclamation-triangle" name="Notfall"></i>');
+
     $('#link-h').click(function(){
         window.location ="home.php"
     });
