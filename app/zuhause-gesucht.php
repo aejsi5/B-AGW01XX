@@ -59,7 +59,7 @@
                                             </tr>
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Alter:</td>
-                                                <td class='tbl_val border_tbl'>" . $result['Alter'] . "</td>
+                                                <td class='tbl_val border_tbl'>" . $result['_Alter_'] . "</td>
                                             </tr>
                                             <tr class=''>
                                                 <td class='col_f border_tbl'>Abgabegrund:</td>
@@ -86,12 +86,15 @@
                                         <div class='dog_pics_div'>
                                             <img class='dog_pic' src='../static/img/". $result['Bild'] . "' alt=''>
                                             <img class='dog_pic' src='../static/img/". $result['Bild2'] . "' alt=''>
-                                        </div>
-                                        <div class='dog_video_div'>
-                                            <a class='video_link' href='https://" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
-                                        </div>
-                                    </div>
-                                </div>");
+                                        </div>");
+                                        if(isset($result['video']){
+                                            echo("<div class='dog_video_div'>
+                                                <a class='video_link' href='https://" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
+                                            </div>");
+                                        };
+                                        echo("
+                                            </div>
+                                            </div>");
                         };
                     }
                     else {
