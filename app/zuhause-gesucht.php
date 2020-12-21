@@ -87,7 +87,7 @@
                                             <img class='dog_pic' src='../static/img/". $result['Bild'] . "' alt=''>
                                             <img class='dog_pic' src='../static/img/". $result['Bild2'] . "' alt=''>
                                         </div>");
-                                        if(isset($result['video']){
+                                        if(isset($result['video'])){
                                             echo("<div class='dog_video_div'>
                                                 <a class='video_link' href='https://" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
                                             </div>");
