@@ -254,6 +254,8 @@ ul.sidebar>a>li{
     border-collapse: unset;
     height: 300px;
     overflow-y: auto;
+    display: block;
+    overflow-x: hidden;
 }
 .dog_pics_div{
     display: flex;
@@ -265,6 +267,10 @@ ul.sidebar>a>li{
 }
 .border_tbl{
     border-bottom: 1.2px solid var(--navico);
+}
+tbody{
+    width: 100%;
+    display: table;
 }
 td{
     padding: 2px;
@@ -289,6 +295,9 @@ td{
     .dog_pic{
     max-height: 100px;
     }
+    .btn{
+        padding: 0.375rem 0.45rem;
+    }
 }
 @media (max-width: 560px){
     .logo-wrapper{
@@ -305,6 +314,9 @@ td{
     }
     .oh{
         font-size: 1rem;
+    }
+    .content{
+        overflow-y: unset;
     }
     .main-nav{
     display: flex;

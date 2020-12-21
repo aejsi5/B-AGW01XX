@@ -12,6 +12,7 @@
 <body>
 
     <?php
+        session_start();
         include 'db_con.php';            
     ?>
 
@@ -37,7 +38,7 @@
                         echo("<p>Hier sehen Sie unsere Hunde.</p>");
                         while($result = mysqli_fetch_array($res)){
                             echo("
-                                <div class='dog-table-div'>
+                                <div class='dog-table-div' name=" . $result['Name'] .">
                                     <table class='dog_tbl'>
                                         <tbody>
                                             <tr class=''>
@@ -87,7 +88,7 @@
                                             <img class='dog_pic' src='../static/img/". $result['Bild2'] . "' alt=''>
                                         </div>
                                         <div class='dog_video_div'>
-                                            <a class='video_link' href='" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
+                                            <a class='video_link' href='https://" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
                                         </div>
                                     </div>
                                 </div>");
