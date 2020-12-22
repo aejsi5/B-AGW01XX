@@ -44,6 +44,8 @@
                                     <img class='dog_pic_big' src='../static/img/". $result['Bild'] . "' alt=''>
                                     <img class='dog_pic_big' src='../static/img/". $result['Bild2'] . "' alt=''>
                                 </div>");
+                        };
+                    };
                 ?>
                 <a href="<?php echo($_SERVER['HTTP_REFERER']) ?>"><span class="btn back_to_table btn-outline-info">Zurück</span></a>
             </div>
