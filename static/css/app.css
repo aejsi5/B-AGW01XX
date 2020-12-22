@@ -344,7 +344,7 @@ iframe{
 .subnav-mobile{
     width: 65%!important;
 }
-.navbar-wra-mobile{
+.navbar-wra-mobile-hide{
     opacity: 0;
     display: none;
 }

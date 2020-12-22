@@ -57,10 +57,10 @@ jQuery(document).ready(function ($) {
         $(this).parents('.video-overlay').addClass('collapse');
     });
     $('.btn-mobile-nav').click(function(){
-        $(this).next().children('.navbar-wra-mobile').toggleClass('navbar-wra-mobile-hide');
+        $(this).next().children('.navbar-wra').toggleClass('navbar-wra-mobile-hide');
     });
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > 100 && window.innerWidth < 560 ) {
+    $('body').scroll(function () {
+        if ($('body').scrollTop() > 430 && window.innerWidth < 560 ) {
             $('.mobile-nav').removeClass('collapse');
         }else{
             $('.mobile-nav').addClass('collapse');
