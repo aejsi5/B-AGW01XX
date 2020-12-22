@@ -66,6 +66,9 @@ jQuery(document).ready(function ($) {
             $('.mobile-nav').addClass('collapse');
         }
     });
+    $('.content').scroll(function (){
+        $('.mobile-nav').addClass('collapse');
+    });
 });
 
 function adapt_height(){
