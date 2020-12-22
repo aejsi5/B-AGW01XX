@@ -1,9 +1,9 @@
 "use strict";
 
 jQuery(document).ready(function ($) {
-    //window.setInterval(function(){
-    //    adapt_height();
-    //},1000);
+    window.setInterval(function(){
+        adapt_height();
+    },1000);
     $('span[data-emergency="1"]').html('<i class="fas fa-exclamation-triangle" title="Notfall"></i>');
 
     $('#link-h').click(function(){
