@@ -330,6 +330,7 @@ iframe{
     display: flex;
     flex-direction: row-reverse;
     align-items: end;
+    width: 320px;
 }
 .mnav-span-mobile{
     font-size: 0.8rem !important;
