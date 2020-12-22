@@ -297,6 +297,7 @@ td{
 .dog_pics_div_big > img{
     margin-bottom: 15px;
     max-width: 90%;
+    max-height: 400px;
 }
 @media (max-width: 960px){
     div.sidebar{
@@ -328,6 +329,9 @@ td{
     }
     .oh{
         font-size: 1rem;
+    }
+    body{
+        overflow-y: scroll;
     }
     .content{
         overflow-y: unset;

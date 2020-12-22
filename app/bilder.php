@@ -20,21 +20,12 @@
         include 'navbar.php';
     ?>
     <main>
-        <div class="sidebar">
-            <ul class="sidebar">
-                <a href='zuhause-gesucht.php?type=dogs'><li class="sidebar-li link-zs-h">Hunde</li></a>
-                <a href='zuhause-gesucht.php?type=cats'><li class="sidebar-li link-zs-k">Katzen</li></a>
-                <a href='zuhause-gesucht.php?type=other'><li class="sidebar-li link-zs-a">Andere Tiere</li></a>
-                <a href='zuhause-gesucht.php?type=white'><li class="sidebar-li link-zs-w">Weiße Schnauze</li></a>
-                <a href='zuhause-gesucht.php?type=missed'><li class="sidebar-li link-zs-v">Vermisste Tiere</li></a>
-            </ul>
-        </div>
-        <div class="content">
+        <div class="content" style="background-color: #FFF;">
             <div class='content-wrapper'>
                 <?php
                     if(isset($_GET["id"])){
                         $id = $_GET['id'];
-                        $query = "SELECT id, Bild, Bild2 FROM Hunde WHERE id = '".$id."';";
+                        $query = "SELECT id, Name, Bild, Bild2 FROM Hunde WHERE id = '".$id."';";
                         $res = mysqli_query($con, $query);
                         while($result = mysqli_fetch_array($res)){
                             echo("<h1>Unser(e) ".$result['Name']."</h1>");
