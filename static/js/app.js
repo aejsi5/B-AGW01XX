@@ -55,6 +55,9 @@ jQuery(document).ready(function ($) {
     });
     $('.back_video').click(function(){
         $(this).parents('.video-overlay').addClass('collapse');
+    });
+    $('.btn-mobile-nav').click(function(){
+        $(this).next().children('.navbar-wra-mobile').toggleClass('navbar-wra-mobile-hide');
     })
 });
 

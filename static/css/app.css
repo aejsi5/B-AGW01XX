@@ -323,6 +323,31 @@ iframe{
     height: 250px;
     margin-bottom: 15px;
 }
+.mobile-nav{
+    position: absolute;
+    top: 70px;
+    left: 160px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+}
+.mnav-span-mobile{
+    font-size: 0.8rem !important;
+}
+.mnav-li-mobile{
+    padding: 4px 5px 4px 10px !important;
+}
+.subnav-li-mobile{
+    margin-top: 3px !important;
+    padding: 1px 1px 1px 5px !important;
+}
+.subnav-mobile{
+    width: 65%!important;
+}
+.navbar-wra-mobile{
+    opacity: 0;
+    display: none;
+}
 @media (max-width: 960px){
     div.sidebar{
         width: 0;
