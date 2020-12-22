@@ -37,7 +37,6 @@
                         $query = "SELECT id, Bild, Bild2 FROM Hunde WHERE id = '".$id."';";
                         $res = mysqli_query($con, $query);
                         while($result = mysqli_fetch_array($res)){
-                            $_SESSION['Dog_id']=$result['id'];
                             echo("<h1>Unser(e) ".$result['Name']."</h1>");
                             echo("<div class='dog_pics_div_big'>
                                     <img class='dog_pic_big' src='../static/img/". $result['Bild'] . "' alt=''>
