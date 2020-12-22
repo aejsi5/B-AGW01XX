@@ -89,10 +89,11 @@
                                         </div>");
                                         if(isset($result['video'])){
                                             echo("<div class='dog_video_div'>
-                                                <a class='video_link' href='https://" . $result['video'] . "'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
+                                                <a class='video_link' href='javascript:void(0)'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
                                                 <div class='video-overlay collapse'>
                                                     <div class='video-wrapper'>
                                                         <iframe src='https://www.youtube.com/embed/" . $result['video'] . "'></iframe>
+                                                        <span class='btn back_video btn-outline-info'>Zurück</span>
                                                     </div>
                                                 </div>
                                             </div>");

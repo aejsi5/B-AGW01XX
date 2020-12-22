@@ -50,6 +50,12 @@ jQuery(document).ready(function ($) {
             };
         }
     );
+    $('.video_link').click(function(){
+        $(this).next('.video-overlay').removeClass('collapse');
+    });
+    $('.back_video').click(function(){
+        $(this).parents('.video-overlay').addClass('collapse');
+    })
 });
 
 function adapt_height(){
