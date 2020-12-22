@@ -1,5 +1,5 @@
 <?php
-    echo("
+    $html_nav("
     <div class='navbar-wra'>
         <div class='logo-wrapper'>
             <div class='logo'>
@@ -59,4 +59,13 @@
             </ul>
         </div>
     </div>");
+    echo($html_nav);
 ?>
+<div class="mobile-na collapse">
+        <span class="btn btn-info">Menü</span>
+        <div class="mobile-nav-container">
+            <?php
+                echo($html_nav);
+            ?>
+        </div>
+    </div>

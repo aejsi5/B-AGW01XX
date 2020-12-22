@@ -92,7 +92,7 @@
                                                 <a class='video_link' href='javascript:void(0)'><i class='fab fa-youtube'></i><span class='btn video_btn btn-outline-info'>Video anschauen</span></a>
                                                 <div class='video-overlay collapse'>
                                                     <div class='video-wrapper'>
-                                                        <iframe src='https://www.youtube.com/embed/" . $result['video'] . "'></iframe>
+                                                        <iframe src='https://www.youtube.com/embed/" . $result['video'] . "' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true'></iframe>
                                                         <span class='btn back_video btn-outline-info'>Zurück</span>
                                                     </div>
                                                 </div>
