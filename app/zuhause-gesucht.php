@@ -131,12 +131,12 @@
     <script src="https://kit.fontawesome.com/9b040eb53d.js" crossorigin="anonymous"></script>
     <script src="../static/js/app.js"></script>
     <?php 
-        if(isset($_SESSION['Dog_id']){
+        if(isset($_SESSION['Dog_id'])){
             echo("
         <script>
             'use strict';
             jQuery(document).ready(function ($) {
-                var off = $(\"div[title='". $_SESSION['Dog_id'] .]"'\").offset().top;
+                var off = $(\"div[title='". $_SESSION['Dog_id'] ."']\").offset().top;
                 $(window).ScrollTop(off);
             };
         </script>");
