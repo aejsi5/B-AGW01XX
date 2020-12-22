@@ -291,6 +291,13 @@ td{
     cursor: pointer;
     max-height: 130px;
 }
+.dog_pics_div_big{
+    width: 100%;
+}
+.dog_pics_div_big > img{
+    margin-bottom: 15px;
+    max-width: 90%;
+}
 @media (max-width: 960px){
     div.sidebar{
         width: 0;
