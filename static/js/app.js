@@ -58,7 +58,14 @@ jQuery(document).ready(function ($) {
     });
     $('.btn-mobile-nav').click(function(){
         $(this).next().children('.navbar-wra-mobile').toggleClass('navbar-wra-mobile-hide');
-    })
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 100 && window.innerWidth < 560 ) {
+            $('.mobile-nav').removeClass('collapse');
+        }else{
+            $('.mobile-nav').addClass('collapse');
+        }
+    });
 });
 
 function adapt_height(){
