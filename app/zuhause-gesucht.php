@@ -84,8 +84,8 @@
                                             <i class='fas fa-info-circle'></i><span class='hint'>Zum Vergrößern auf die Bilder klicken</span>
                                         </div>
                                         <div class='dog_pics_div'>
-                                            <img class='dog_pic' src='../static/img/". $result['Bild'] . "' alt=''>
-                                            <img class='dog_pic' src='../static/img/". $result['Bild2'] . "' alt=''>
+                                            <a href='/bilder.php?id=".$result['id']."'><img class='dog_pic' src='../static/img/". $result['Bild'] . "' alt=''></a>
+                                            <a href='/bilder.php?id=".$result['id']."'><img class='dog_pic' src='../static/img/". $result['Bild2'] . "' alt=''></a>
                                         </div>");
                                         if(isset($result['video'])){
                                             echo("<div class='dog_video_div'>
