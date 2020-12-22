@@ -38,7 +38,7 @@
                         echo("<p>Hier sehen Sie unsere Hunde.</p>");
                         while($result = mysqli_fetch_array($res)){
                             echo("
-                                <div class='dog-table-div' title=" . $result['id'] .">
+                                <div class='dog-table-div'>
                                     <table class='dog_tbl'>
                                         <tbody>
                                             <tr class=''>
@@ -130,17 +130,5 @@
     <script src="../static/js/bootstrap.js"></script>
     <script src="https://kit.fontawesome.com/9b040eb53d.js" crossorigin="anonymous"></script>
     <script src="../static/js/app.js"></script>
-    <?php 
-        if(isset($_SESSION['Dog_id'])){
-            echo("
-        <script>
-            'use strict';
-            jQuery(document).ready(function ($) {
-                var off = $(\"div[title='". $_SESSION['Dog_id'] ."']\").offset().top;
-                $(window).ScrollTop(off);
-            };
-        </script>");
-        };
-    ?>
 </body>
 </html>
