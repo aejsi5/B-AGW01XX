@@ -102,6 +102,10 @@
                                             </div>
                                             </div>");
                         };
+                    }elseif (isset($_GET["type"])){
+                        echo("
+                            <div><h1>Demo Page</h1><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolor</p></div>
+                        ");
                     }
                     else {
                         echo("
